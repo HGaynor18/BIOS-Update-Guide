@@ -1,0 +1,11 @@
+
+# Ignore temporary files and system files
+*.log
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# Ignore deployment artifacts
+node_modules/
+dist/
+out/

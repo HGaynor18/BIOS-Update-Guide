@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step by step guide to update your motherboard's BIOS.">
+    <title>How to Update Your Motherboard's BIOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .important {
+            background-color: #ffcccb;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid red;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>How to Update Your Motherboard's BIOS</h1>
+    </header>
+
+    <section>
+        <h2>Why Update the BIOS?</h2>
+        <p>Updating your motherboard’s BIOS can improve system stability, fix bugs, and add new features. However, it can also be risky if not done properly. Follow these steps carefully to avoid damaging your motherboard.</p>
+    </section>
+
+    <section>
+        <h2>Step 1: Identify Your Motherboard and Current BIOS Version</h2>
+        <p>Before downloading a BIOS update, you need to know your motherboard model and the current BIOS version.</p>
+        <ul>
+            <li>Open a command prompt in Windows (search for <strong>cmd</strong>).</li>
+            <li>Type <code>wmic baseboard get product,Manufacturer</code> to find your motherboard model.</li>
+            <li>Type <code>wmic bios get smbiosbiosversion</code> to find your current BIOS version.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 2: Download the Latest BIOS Update</h2>
+        <p><a href ="BIOS-Links.html">
+            Motherboard manufacturer BIOS download Links</a>
+        </p>
+        <p>Go to the manufacturer’s website and find the support page for your motherboard. Download the latest BIOS version and any associated utilities. Make sure it matches your motherboard model exactly.</p>
+        <div class="important">
+            <strong>Important:</strong> Only download BIOS files from official manufacturer websites. Using incorrect or corrupted files can damage your motherboard.
+        </div>
+    </section>
+
+    <section>
+        <h2>Step 3: Prepare a USB Drive</h2>
+        <p>To apply the BIOS update, you’ll need a USB flash drive <a href="usb-format-fat32.html">formatted to FAT32</a>. Follow these steps:</p>
+        <ul>
+            <li>Insert the USB drive into your computer.</li>
+            <li>Right-click the drive in "This PC" and select <strong>Format</strong>.</li>
+            <li>Choose <strong>FAT32</strong> and click <strong>Start</strong>.</li>
+            <li>Once formatted, copy the BIOS update files to the root of the USB drive (not inside any folders).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 4: Enter the BIOS Setup</h2>
+        <p>Now, restart your computer and enter the BIOS setup by pressing the appropriate key during boot (usually <strong>Delete</strong> or <strong>F2</strong>).</p>
+        <ul>
+            <li>Consult your motherboard manual for the specific key.</li>
+            <li>Once in the BIOS, navigate to the update section (often called <strong>EZ Flash</strong>, <strong>Q-Flash</strong>, or something similar).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Step 5: Update the BIOS</h2>
+        <p>With the USB drive inserted, select the BIOS update option and follow the on-screen instructions.</p>
+        <ul>
+            <li>Choose the BIOS file from the USB drive.</li>
+            <li>Confirm that you want to start the update process.</li>
+        </ul>
+        <div class="important">
+            <strong>Warning:</strong> Do not turn off your computer or remove the USB drive during the update process. Doing so can brick your motherboard.
+        </div>
+    </section>
+
+    <section>
+        <h2>Step 6: Restart and Configure BIOS Settings</h2>
+        <p>Once the update is complete, your computer will restart. Enter the BIOS again to reconfigure any settings that were reset during the update, such as boot order or overclocking profiles.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BIOS Update Guide. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
